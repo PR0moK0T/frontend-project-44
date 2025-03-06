@@ -19,6 +19,7 @@
     "debug": "^4.4.0",
     "es-toolkit": "^1.32.0",
     "jiti": "^2.4.2",
+    "random": "^5.3.0",
     "readline-sync": "^1.4.10",
     "vitest": "^3.0.7"
   },

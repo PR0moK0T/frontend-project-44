@@ -1,4 +1,28 @@
 import gro from "../index.js";
+import readlineSync from 'readline-sync';
+
+let i = 0
+let y = 0
+
 console.log('Welcome to the Brain Games!');
-gro()
+let yousername = gro()
 console.log('Answer "yes" if the number is even, otherwise answer "no".')
+
+while (y < 3) {
+    i = Math.floor(Math.random() * 50) + 1;
+    console.log(`Question: ${i}`);
+    let bro = readlineSync.question`Your answer: `
+    let ol = `'yes' is wrong answer ;(. Correct answer was 'no'.Let's try again, ${yousername}!`
+    if (i % 2 === 0 && bro === 'yes') {
+        console.log('Correct!')
+    }
+    else if (i % 2 !== 0 && bro === 'no') {
+        console.log('Correct!')
+    }
+    else {
+        console.log(`${ol}`)
+        break
+    }
+    y += 1
+    if (y === 3) {console.log (`Congratulations, ${yousername}`)}
+}
