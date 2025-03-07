@@ -12,7 +12,10 @@
   "bin": {
     "brain-games": "bin/brain-games.js",
     "brain-even": "bin/brain-even.js",
-    "brain-calc":"bin/brain-calc.js"
+    "brain-calc": "bin/brain-calc.js",
+    "brain-gcd": "bin/brain-gcd.js",
+    "brain-progression": "bin/brain-progression.js",
+    "brain-prime": "bin/brain-prome.js"
   },
   "dependencies": {
     "@stylistic/eslint-plugin": "^4.1.0",
@@ -40,5 +43,6 @@
     "simple-git-hooks": "^2.11.1",
     "typescript": "^5.7.3",
     "typescript-eslint": "^8.26.0"
-  }
+  },
+  "keywords": []
 }
