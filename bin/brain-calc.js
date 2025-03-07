@@ -21,8 +21,8 @@ const getTrueAnswer = (num1, num2, sign) => {
 
 const calculate = () => {
     while (y < 3) {
-        const firstNum = getRandomIntInclusive(5, 10)
-        const secondNum = getRandomIntInclusive(3, 8)
+        const firstNum = getRandomIntInclusive(1, 50)
+        const secondNum = getRandomIntInclusive(1, 50)
         const indexSing = getRandomIntInclusive(0, 2)
     
         const trueAnswer = getTrueAnswer(firstNum, secondNum, signs[indexSing])
