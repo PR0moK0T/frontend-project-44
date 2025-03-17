@@ -22,11 +22,11 @@ while (y < 3) {
 
     console.log(`Question: ${firstNum} ${secondNum}`);
     let youAnswer = readlineSync.question`Your answer: `
-    if (youAnswer === trueAnswer) {
+    if (youAnswer == trueAnswer) {
         console.log('Correct!') 
-    } else if (youAnswer !== trueAnswer) {
-        console.log(`'${youAnswer}' is wrong answer ;(. Correct answer was '${trueAnswer}'.Let's try again, ${yousername}!`)
-        break
+    } else {
+        console.log(`'${youAnswer}' is wrong answer ;(. Correct answer was '${trueAnswer}'.
+        Let's try again, ${yousername}!`)
     }
     y++
     if (y === 3) { console.log(`Congratulations, ${yousername}`) }
