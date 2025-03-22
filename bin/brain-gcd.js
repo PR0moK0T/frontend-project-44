@@ -1,19 +1,20 @@
 import first from "eslint-plugin-import/lib/rules/first.js";
-import { getRandomIntInclusive } from "../index.js";
+import { gro, grom , getRandomIntInclusive } from "../index.js";
 import readlineSync from 'readline-sync';
 
 let y = 0
-console.log('Welcome to the Brain Games!');
-const yousername = readlineSync.question`May I have your name? `;
-console.log(`Hello, ${yousername}!`)
+grom()
+let yousername = gro()
 console.log('Find the greatest common divisor of given numbers.')
 
-export const gcd = (a, b) => {
-    if (!b) {
-      return a;
+function gcd(num1, num2) {
+    while (num2 !== 0) {
+        let temp = num2
+        num2 = num1 % num2
+        num1 = temp
     }
-    return gcd(b, a % b);
-  };
+    return num1
+}
 
 while (y < 3) {
     const firstNum = getRandomIntInclusive(1, 50)
@@ -21,12 +22,12 @@ while (y < 3) {
     const trueAnswer = gcd(firstNum, secondNum)
 
     console.log(`Question: ${firstNum} ${secondNum}`);
-    let youAnswer = readlineSync.question(`Your answer: `)
-    if (Number(youAnswer) === trueAnswer) {
+    let youAnswer = readlineSync.question`Your answer: `
+    if (youAnswer == trueAnswer) {
         console.log('Correct!') 
-    } else if (youAnswer !== trueAnswer) {
-        console.log(`'${youAnswer}' is wrong answer ;(. Correct answer was '${trueAnswer}'.Let's try again, ${yousername}!`)
-        break
+    } else {
+        console.log(`'${youAnswer}' is wrong answer ;(. Correct answer was '${trueAnswer}'.
+        Let's try again, ${yousername}!`)
     }
     y++
     if (y === 3) { console.log(`Congratulations, ${yousername}`) }
