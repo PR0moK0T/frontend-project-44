@@ -1,8 +1,9 @@
 import readlineSync from 'readline-sync';
-import { gro, getRandomIntInclusive } from "../index.js";
 
 let y = 0
-let yousername = gro()
+console.log('Welcome to the Brain Games!');
+const yousername = readlineSync.question`May I have your name? `;
+console.log(`Hello, ${yousername}!`)
 console.log('What number is missing in the progression?')
 
 function generateArithmeticProgression(start, difference, length) {

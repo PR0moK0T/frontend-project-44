@@ -14,7 +14,9 @@ function isPrime(num) {
     return true;
 }
 
-let yousername = gro()
+console.log('Welcome to the Brain Games!');
+const yousername = readlineSync.question`May I have your name? `;
+console.log(`Hello, ${yousername}!`)
 console.log('Answer "yes" if given number is prime. Otherwise answer "no".')
 
 while (y < 3) {

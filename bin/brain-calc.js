@@ -1,13 +1,16 @@
 import first from "eslint-plugin-import/lib/rules/first.js";
-import { gro, getRandomIntInclusive } from "../index.js";
+import { getRandomIntInclusive } from "../index.js";
 import readlineSync from 'readline-sync';
 
 
 const signs = ['*', '-', '+']
 
 let y = 0
-let yousername = gro()
+console.log('Welcome to the Brain Games!');
+const yousername = readlineSync.question`May I have your name? `;
+console.log(`Hello, ${yousername}!`)
 console.log('What is the result of the expression?')
+
 
 const getTrueAnswer = (num1, num2, sign) => {
     const operation = {
@@ -22,7 +25,7 @@ const getTrueAnswer = (num1, num2, sign) => {
 const calculate = () => {
     while (y < 3) {
         const firstNum = getRandomIntInclusive(1, 50)
-        const secondNum = getRandomIntInclusive(1, 50)
+        const secondNum = getRandomIntInclusive(1, 10)
         const indexSing = getRandomIntInclusive(0, 2)
     
         const trueAnswer = getTrueAnswer(firstNum, secondNum, signs[indexSing])
