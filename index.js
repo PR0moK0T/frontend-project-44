@@ -1,3 +1,3 @@
-import { gro, getRandomIntInclusive } from "./src/cli.js"
+import { getRandomIntInclusive } from "./src/cli.js"
 
-export { gro, getRandomIntInclusive }
+export { getRandomIntInclusive }
