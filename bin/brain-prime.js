@@ -1,5 +1,5 @@
 import readlineSync from 'readline-sync';
-import { gro, getRandomIntInclusive } from "../index.js";
+import { getRandomIntInclusive } from "../index.js";
 
 let y = 0
 
