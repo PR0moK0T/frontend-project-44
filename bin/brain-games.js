@@ -1,4 +1,6 @@
 #!/usr/bin/env node
-export const grom = () => {
-    console.log('Welcome to the Brain Games!');
-    }
+import { gro } from '../index.js';
+
+console.log('Welcome to the Brain Games!');
+
+gro();

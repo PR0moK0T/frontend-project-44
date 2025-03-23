@@ -1,5 +1,5 @@
 import readlineSync from 'readline-sync';
-import { gro, grom , getRandomIntInclusive } from "../index.js";
+import { gro, getRandomIntInclusive } from "../index.js";
 
 let y = 0
 
@@ -14,7 +14,6 @@ function isPrime(num) {
     return true;
 }
 
-grom()
 let yousername = gro()
 console.log('Answer "yes" if given number is prime. Otherwise answer "no".')
 

@@ -1,8 +1,7 @@
 import readlineSync from 'readline-sync';
-import { gro, grom , getRandomIntInclusive } from "../index.js";
+import { gro, getRandomIntInclusive } from "../index.js";
 
 let y = 0
-grom()
 let yousername = gro()
 console.log('What number is missing in the progression?')
 

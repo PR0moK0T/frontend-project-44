@@ -1,9 +1,8 @@
 import first from "eslint-plugin-import/lib/rules/first.js";
-import { gro, grom , getRandomIntInclusive } from "../index.js";
+import { gro, getRandomIntInclusive } from "../index.js";
 import readlineSync from 'readline-sync';
 
 let y = 0
-grom()
 let yousername = gro()
 console.log('Find the greatest common divisor of given numbers.')
 
