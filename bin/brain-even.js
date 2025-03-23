@@ -12,7 +12,6 @@ while (y < 3) {
     i = Math.floor(Math.random() * 50) + 1;
     console.log(`Question: ${i}`);
     let bro = readlineSync.question`Your answer: `
-    let ol = `'yes' is wrong answer ;(. Correct answer was 'no'.Let's try again, ${yousername}!`
     if (i % 2 === 0 && bro === 'yes') {
         console.log('Correct!')
     }
