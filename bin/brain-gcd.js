@@ -3,6 +3,7 @@ import { gro, getRandomIntInclusive } from "../index.js";
 import readlineSync from 'readline-sync';
 
 let y = 0
+console.log('Welcome to the Brain Games!');
 let yousername = gro()
 console.log('Find the greatest common divisor of given numbers.')
 

@@ -7,6 +7,7 @@ const signs = ['*', '-', '+']
 
 let y = 0
 
+console.log('Welcome to the Brain Games!');
 let yousername = gro()
 console.log('What is the result of the expression?')
 

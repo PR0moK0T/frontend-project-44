@@ -2,6 +2,7 @@ import readlineSync from 'readline-sync';
 import { gro, getRandomIntInclusive } from "../index.js";
 
 let y = 0
+console.log('Welcome to the Brain Games!');
 let yousername = gro()
 console.log('What number is missing in the progression?')
 
