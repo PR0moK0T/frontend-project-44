@@ -30,6 +30,7 @@ if (userAnswer == correctAnswer) {
     console.log('Correct!');
 } else {
     console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'. Let's try again, ${yousername}!`);
+    break
 }
 y++
 if (y === 3) { console.log(`/Congratulations, ${yousername}!/`) }
