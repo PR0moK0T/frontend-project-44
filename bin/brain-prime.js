@@ -19,8 +19,8 @@ function isPrime(num) {
     return true;
 }
 
-while (y < 3) {
-    const number = getRandomIntInclusive(1, 100);
+while (y < 1) {
+    const number = getRandomIntInclusive(1, 50);
     console.log(`Question: ${number}`);
     const userAnswer = readlineSync.question('Your answer: ');
 
@@ -33,5 +33,4 @@ while (y < 3) {
         break;
     }
     y++
-    if (y === 3) { console.log(`/Congratulations, ${yousername}!/`) }
 }

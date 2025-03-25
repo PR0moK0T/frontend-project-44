@@ -14,6 +14,7 @@ function generateArithmeticProgression(start, difference, length) {
     }
     return progression;
 }
+
 while (y < 3) {
     const start = Math.floor(Math.random() * 10); 
     const difference = Math.floor(Math.random() * 5) + 1; 
