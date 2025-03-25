@@ -19,13 +19,15 @@ function isPrime(num) {
     return true;
 }
 
-while (y < 1) {
-    const number = getRandomIntInclusive(1, 50);
-    console.log(`Question: ${number}`);
-    const userAnswer = readlineSync.question('Your answer: ');
 
-    const correctAnswer = isPrime(number) ? 'yes' : 'no';
+const number = getRandomIntInclusive(1, 50);
+console.log(`Question: ${number}`);
+const userAnswer = readlineSync.question('Your answer: ');
 
-    console.log('Correct!')
-    y++
+const correctAnswer = isPrime(number) ? 'yes' : 'no';
+
+if (userAnswer == correctAnswer) {
+    console.log('Correct!');
+} else {
+    console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'. Let's try again, ${yousername}!`);
 }
