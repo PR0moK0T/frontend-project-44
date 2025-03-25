@@ -26,10 +26,6 @@ while (y < 1) {
 
     const correctAnswer = isPrime(number) ? 'yes' : 'no';
 
-    if (userAnswer === correctAnswer) {
-        console.log('Correct!');
-    } else {
-        console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'. Let's try again, ${yousername}!`);
-    }
+    console.log('Correct!')
     y++
 }
