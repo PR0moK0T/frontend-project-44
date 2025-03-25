@@ -5,6 +5,7 @@ import readlineSync from 'readline-sync';
 let i = 0
 let y = 0
 
+console.log('/Congratulations, Tirion!/')
 console.log('Welcome to the Brain Games!');
 let yousername = gro()
 console.log('Answer "yes" if the number is even, otherwise answer "no".')
