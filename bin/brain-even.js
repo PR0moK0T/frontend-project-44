@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 import { gro } from "../index.js";
 import readlineSync from 'readline-sync';
 
