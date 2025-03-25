@@ -1,36 +1,37 @@
 #!/usr/bin/env node
-import first from "eslint-plugin-import/lib/rules/first.js";
-import { gro, getRandomIntInclusive } from "../index.js";
 import readlineSync from 'readline-sync';
+import { gro, getRandomIntInclusive } from '../index.js';
 
-let y = 0
+let y = 0;
 console.log('Welcome to the Brain Games!');
-let yousername = gro()
-console.log('Find the greatest common divisor of given numbers.')
+const yousername = gro();
+console.log('Find the greatest common divisor of given numbers.');
 
 function gcd(num1, num2) {
-    while (num2 !== 0) {
-        let temp = num2
-        num2 = num1 % num2
-        num1 = temp
-    }
-    return num1
+  let modenum1 = num1;
+  let modenum2 = num2;
+  while (modenum2 !== 0) {
+    const temp = modenum2;
+    modenum2 = modenum1 % modenum2;
+    modenum1 = temp;
+  }
+  return num1;
 }
 
 while (y < 3) {
-    const firstNum = getRandomIntInclusive(1, 50)
-    const secondNum = getRandomIntInclusive(1, 50)
-    const trueAnswer = gcd(firstNum, secondNum)
+  const firstNum = getRandomIntInclusive(1, 50);
+  const secondNum = getRandomIntInclusive(1, 50);
+  const trueAnswer = gcd(firstNum, secondNum);
 
-    console.log(`Question: ${firstNum} ${secondNum}`);
-    let youAnswer = readlineSync.question`Your answer: `
-    if (youAnswer == trueAnswer) {
-        console.log('Correct!') 
-    } else {
-        console.log(`'${youAnswer}' is wrong answer ;(. Correct answer was '${trueAnswer}'.
-        Let's try again, ${yousername}!`)
-        break
-    }
-    y++
-    if (y === 3) { console.log(`/Congratulations, ${yousername}!/`) }
+  console.log(`Question: ${firstNum} ${secondNum}`);
+  const youAnswer = readlineSync.question`Your answer: `;
+  if (Number(youAnswer) === trueAnswer) {
+    console.log('Correct!');
+  } else {
+    console.log(`'${youAnswer}' is wrong answer ;(. Correct answer was '${trueAnswer}'.
+        Let's try again, ${yousername}!`);
+    break;
+  }
+  y += 1;
+  if (y === 3) { console.log(`/Congratulations, ${yousername}!/`); }
 }
