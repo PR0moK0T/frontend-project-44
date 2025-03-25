@@ -19,7 +19,7 @@ function isPrime(num) {
     return true;
 }
 
-
+while (y < 3) {
 const number = getRandomIntInclusive(1, 50);
 console.log(`Question: ${number}`);
 const userAnswer = readlineSync.question('Your answer: ');
@@ -30,4 +30,5 @@ if (userAnswer == correctAnswer) {
     console.log('Correct!');
 } else {
     console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'. Let's try again, ${yousername}!`);
+}
 }
