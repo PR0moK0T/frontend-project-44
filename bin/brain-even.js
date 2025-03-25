@@ -5,7 +5,6 @@ import readlineSync from 'readline-sync';
 let i = 0
 let y = 0
 
-console.log('/Congratulations, Tirion!/')
 console.log('Welcome to the Brain Games!');
 let yousername = gro()
 console.log('Answer "yes" if the number is even, otherwise answer "no".')
@@ -28,5 +27,5 @@ while (y < 3) {
         break
     }
     y += 1
-    if (y === 3) { console.log(`Congratulations, ${yousername}`) }
+    if (y === 3) { console.log(`/Congratulations, ${yousername}/`) }
 }
