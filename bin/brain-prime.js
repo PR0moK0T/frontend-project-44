@@ -4,6 +4,10 @@ import { gro, getRandomIntInclusive } from "../index.js";
 
 let y = 0
 
+console.log('Welcome to the Brain Games!');
+let yousername = gro()
+console.log('Answer "yes" if given number is prime. Otherwise answer "no".')
+
 function isPrime(num) {
     if (num <= 1) return false;
     if (num === 2) return true;
@@ -14,10 +18,6 @@ function isPrime(num) {
     }
     return true;
 }
-
-console.log('Welcome to the Brain Games!');
-let yousername = gro()
-console.log('Answer "yes" if given number is prime. Otherwise answer "no".')
 
 while (y < 3) {
     const number = getRandomIntInclusive(1, 100);
