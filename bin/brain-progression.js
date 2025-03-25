@@ -35,4 +35,5 @@ while (y < 3) {
         break
     }
     y++
+    if (y === 3) { console.log(`/Congratulations, ${yousername}!/`) }
 }
