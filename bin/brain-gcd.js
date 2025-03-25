@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 import first from "eslint-plugin-import/lib/rules/first.js";
 import { gro, getRandomIntInclusive } from "../index.js";
 import readlineSync from 'readline-sync';
