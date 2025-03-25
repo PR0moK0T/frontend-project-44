@@ -15,7 +15,7 @@ function gcd(num1, num2) {
     modenum2 = modenum1 % modenum2;
     modenum1 = temp;
   }
-  return num1;
+  return modenum1;
 }
 
 while (y < 3) {
