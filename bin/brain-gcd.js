@@ -29,6 +29,7 @@ while (y < 3) {
     } else {
         console.log(`'${youAnswer}' is wrong answer ;(. Correct answer was '${trueAnswer}'.
         Let's try again, ${yousername}!`)
+        break
     }
     y++
     if (y === 3) { console.log(`/Congratulations, ${yousername}!/`) }
