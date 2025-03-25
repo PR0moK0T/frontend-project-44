@@ -15,7 +15,7 @@
     "brain-calc": "bin/brain-calc.js",
     "brain-gcd": "bin/brain-gcd.js",
     "brain-progression": "bin/brain-progression.js",
-    "brain-prime": "bin/brain-prome.js"
+    "brain-prime": "bin/brain-prime.js"
   },
   "dependencies": {
     "@stylistic/eslint-plugin": "^4.1.0",
